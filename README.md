@@ -14,6 +14,44 @@ You can download this tool using the following command from PowerShell:
 
 `dotnet tool install --global xmldocmd --version 2.9.0`
 
+## Use
+
+### Installing Package
+`dotnet add package Talegen.EveryOrg.Client --version 1.0.0`
+
+### Register the Service
+
+```
+    // Register IEveryOrgClient scoped service here
+    services.AddEveryOrgClient(config =>
+    {
+        config.PrivateKey = privateKey;
+        config.PublicKey = publicKey;
+    });
+```
+
+### Consume the IEveryOrgClient client
+
+Using [Dependency Injection](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection), you can consume an instance of `IEveryOrgClient` by simply including it in a DI created class. It is [recommended you do not invoke via GetService](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-9.0#recommendations).
+
+```
+    // via DI
+    public class MyService
+    {
+        private readonly IEveryOrgClient client;
+
+        public MyService(IEveryOrgClient everyOrgclient)
+        {
+            this.client = everyOrgClient;
+        }
+        
+        public async Task<DetailsResult> GetNonprofitAsync(string orgId, CancellationToken token)
+        {
+            return await this.client.GetDetailsAsync(orgId, token);
+        }
+    }
+```
+
 ## Contributing
 
 There are many ways in which you can participate in the project, for example:
