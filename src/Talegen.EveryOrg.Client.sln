@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Talegen.EveryOrg.Client", "Talegen.EveryOrg.Client.csproj", "{0E2A4BD5-A733-46F6-B88E-90D3180AA4EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Talegen.EveryOrg.Client.Tests", "..\tests\Talegen.EveryOrg.Client.Tests\Talegen.EveryOrg.Client.Tests.csproj", "{DE628DAB-702C-452C-BE10-04229CC3331A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E2A4BD5-A733-46F6-B88E-90D3180AA4EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E2A4BD5-A733-46F6-B88E-90D3180AA4EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E2A4BD5-A733-46F6-B88E-90D3180AA4EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E2A4BD5-A733-46F6-B88E-90D3180AA4EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE628DAB-702C-452C-BE10-04229CC3331A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE628DAB-702C-452C-BE10-04229CC3331A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE628DAB-702C-452C-BE10-04229CC3331A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE628DAB-702C-452C-BE10-04229CC3331A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A80395B9-4C5A-44B8-8751-92F2B089CEFA}
+	EndGlobalSection
+EndGlobal
